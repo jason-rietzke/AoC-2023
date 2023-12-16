@@ -1,5 +1,5 @@
 #[tracing::instrument]
-pub fn process(_input: &str) -> miette::Result<String> {
+pub fn process(_input: &str) -> miette::Result<i32> {
     todo!("day 01 - part 2");
 }
 
@@ -10,8 +10,8 @@ mod tests {
     #[test]
     fn test_process() -> miette::Result<()> {
         todo!("haven't built test yet");
-        let input = include_str!("../test2.txt");
-        assert_eq!("", process(input)?);
+        let input = include_str!("../test.txt");
+        assert_eq!(0, process(input)?);
         Ok(())
     }
 }
